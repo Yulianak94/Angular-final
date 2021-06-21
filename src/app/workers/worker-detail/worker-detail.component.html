@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Worker - details</h2>
+    <div *ngIf="worker | async as worker">
+        <h3>{{ worker.name }}</h3>
+        
+        <div class="d-flex flex-column">
+            <label>Name:</label>
+            <input type="text" [(ngModel)]="worker.name" placeholder="Name...">
+            <label>Age:</label>
+            <input type="number" [(ngModel)]="worker.age" placeholder="Age...">
+            <label>City:</label>
+            <input type="text" [(ngModel)]="worker.city" placeholder="City...">
+            <label>Job Description:</label>
+            <input type="text" [(ngModel)]="worker.jobDescription" placeholder="Job Description...">
+            <label>Hours per Month:</label>
+            <input type="text" [(ngModel)]="worker.hoursMonth" placeholder=">Hours per Month...">
+            <label>Hourly Wage:</label>
+            <input type="text" [(ngModel)]="worker.hourlyWage" placeholder="Hourly Wage...">
+        </div>
+        
+        
+        <button class="btn btn-secondary" (click)="goBack()">BACK</button>
+    </div>
+</div>
+        

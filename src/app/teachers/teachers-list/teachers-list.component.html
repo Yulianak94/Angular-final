@@ -1,0 +1,11 @@
+<div class="container">
+    <h3>TEACHERS LIST</h3>
+    <ul class="list-group">
+        <!-- Add async pipe for students array(it is an observable) -->
+        <li *ngFor="let teacher of teachers | async" class="list-group-item">
+            <a [routerLink]="['/teacher', teacher.id]">
+                <b> {{ teacher.name }} </b> <label>Monthly Salary:</label> {{teacher.hoursMonth*teacher.hourlyWage}}
+            </a>
+        </li>
+    </ul>
+</div>

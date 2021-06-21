@@ -1,0 +1,43 @@
+<div class="container">
+    <h2>Teacher - details</h2>
+    <div *ngIf="teacher | async as teacher">
+        <h3>{{ teacher.name }}</h3>
+        
+        <div class="d-flex flex-column">
+            <label>Name:</label>
+            <input type="text" [(ngModel)]="teacher.name" placeholder="Name...">
+            <label>Age:</label>
+            <input type="number" [(ngModel)]="teacher.age" placeholder="Age...">
+            <label>City:</label>
+            <input type="text" [(ngModel)]="teacher.city" placeholder="City...">
+            <label>Subject:</label>
+            <input type="text" [(ngModel)]="teacher.subject" placeholder="Subject...">
+            <label>Seniority:</label>
+            <input type="number" [(ngModel)]="teacher.seniority" placeholder="Seniority...">
+            <label>Hours per Month:</label>
+            <input type="number" [(ngModel)]="teacher.hoursMonth" placeholder="Hours per Month...">
+            <label>Hourly Wage:</label>
+            <input type="number" [(ngModel)]="teacher.hourlyWage" placeholder="Hourly Wage...">
+            <br>
+        </div>
+        
+
+        
+        <div *ngFor="let item of teacher.listClass" class="d-flex flex-column">
+            <label><b>My Class Details:</b></label>
+            <label>Name:</label>
+            <input type="text" [(ngModel)]="item.name" placeholder="Name...">
+            <label>Number of Students:</label>
+            <input type="number" [(ngModel)]="item.numStudents" placeholder="Number of Students...">
+            <label>Address:</label>
+            <input type="text" [(ngModel)]="item.address" placeholder="Address...">
+            <label>Educator Name:</label>
+            <input type="text" [(ngModel)]="item.educatorName" placeholder="Educator Name...">
+        </div>
+        
+        
+
+        <button class="btn btn-success" (click)="goBack()">BACK</button>
+
+    </div>
+</div>

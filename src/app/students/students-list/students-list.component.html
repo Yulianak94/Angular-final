@@ -1,0 +1,17 @@
+<div class="container">
+    <h3>STUDENTS LIST</h3>
+    <ul class="list-group">
+        <!-- Add async pipe for students array(it is an observable) -->
+        <li *ngFor="let student of students | async" class="list-group-item">
+            <a [routerLink]="['/student', student.id]">
+
+                    
+                        <b> {{ student.name }} </b> <label>  </label> 
+                        <div *ngFor="let grade of avg" class="d-flex flex-column">
+                            {{student.getAvg}}
+
+                        </div>
+            </a>
+        </li>
+    </ul>
+</div>

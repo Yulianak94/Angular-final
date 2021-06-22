@@ -6,6 +6,14 @@
         <div class="d-flex flex-column">
             <label>Name:</label>
             <input type="text" [(ngModel)]="teacher.name" placeholder="Name...">
+            <label>Picture:</label>
+            <div class="col-6 " style="margin-top: 15px;">
+                <div class="row">
+                  <div class="col-6">
+                      <img src={{teacher.picture}} width="200" height="200"/>
+                  </div>
+                </div>
+              </div>
             <label>Age:</label>
             <input type="number" [(ngModel)]="teacher.age" placeholder="Age...">
             <label>City:</label>

@@ -1,4 +1,4 @@
 export class Grade {
-  type: string;
-  myGrade: number;
+  title: string;
+  grade: number;
 }

@@ -1,38 +1,38 @@
 import { Observable } from 'rxjs';
-import { Student } from './../student';
+import { Pupil } from './../pupil';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
-import { StudentService } from '../student.service';
+import { PupilService } from '../pupil.service';
 import { switchMap } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-student-detail',
-  templateUrl: './student-detail.component.html',
-  styleUrls: ['./student-detail.component.css']
+  selector: 'app-pupil-detail',
+  templateUrl: './pupil-detail.component.html',
+  styleUrls: ['./pupil-detail.component.css']
 })
-export class StudentDetailComponent implements OnInit {
+export class PupilDetailComponent implements OnInit {
 
   // get one student from the array
-  student:Observable<Student>;
+  pupil:Observable<Pupil>;
 
   // Get all services and interfaces to work with: 
   constructor(
     private route: ActivatedRoute, 
     private router: Router, 
-    private service: StudentService
+    private service: PupilService
   ) { }
 
   ngOnInit(): void {
-    this.student = this.route.paramMap.pipe(
+    this.pupil = this.route.paramMap.pipe(
       switchMap((params: ParamMap)=> 
-      this.service.getStudent(params.get('id')))
+      this.service.getPupil(params.get('id')))
     )
   }
 
   goBack(){
     // const sId = student ? student.id : null;
     // this.router.navigate(['/students', { id: sId }]);
-    this.router.navigate(['/students']);
+    this.router.navigate(['/pupils']);
   }
 
 }

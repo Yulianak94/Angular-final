@@ -1,12 +1,12 @@
 import { Class } from "../class";
-import { Person } from "../Person";
+import { Human } from "../Human";
 
-export class Teacher extends Person{
+export class Teacher extends Human{
   subject: string[];
   listClass: Class[];
   seniority: number;
-  hoursMonth: number;
-  hourlyWage: number;
+  hoursPerMonth: number;
+  salaryHour: number;
 
   
 

@@ -7,21 +7,23 @@ import { AppComponent } from './app.component';
 
 // import:
 import { AppRoutingModule } from './app-routing.module';
-import { StudentsModule } from './students/students.module';
+import { PupilsModule } from './pupils/pupils.module';
 import { TeachersModule } from './teachers/teachers.module';
 
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
-import { WorkersModule } from './workers/workers.module';
+import { EmployeesModule } from './employees/employees.module';
+import { AvgPipe } from "../pipes/AvgPipe.pipe";
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     MainComponent,
+    AvgPipe
     
   ],
-  imports: [BrowserModule, AppRoutingModule, StudentsModule, TeachersModule, WorkersModule],
+  imports: [BrowserModule, AppRoutingModule, PupilsModule, TeachersModule, EmployeesModule],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,11 +1,11 @@
 import { Teacher } from "./teachers/teacher";
 
 export class Class {
-  id: number;
+  id: string;
   name: string;
-  numStudents: number;
+  numOfStudents: number;
   address: string;
-  educatorID: number;
-  educatorName: string;
+  teacherID: number;
+  teacherName: string;
 
 }

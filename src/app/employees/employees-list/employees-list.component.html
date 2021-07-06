@@ -1,0 +1,26 @@
+<div class="container">
+    <h3>Employees List</h3>
+    <ul class="list-group">
+        <!-- Add async pipe for students array(it is an observable) -->
+        
+          
+        <li *ngFor="let employee of employees | async"  class="d-flex flex-column">
+            <a [routerLink]="['/employee', employee.id]">
+            <div *ngIf="employee.hoursPerMonth*employee.salaryHour>3000; else elseBlock"  >
+
+                <hr style="height:20px; background-color:blue">
+                <b> {{ employee.name }} </b> <label>Salary Per Month:</label> {{employee.hoursPerMonth*employee.salaryHour}}
+                <hr style="height:20px; background-color:blue">
+
+            </div>
+
+            <ng-template #elseBlock>
+                <hr style="height:20px; background-color:red" >
+                <b> {{ employee.name }} </b> <label>Salary Per Month:</label> {{employee.hoursPerMonth*employee.salaryHour}}
+                <hr style="height:20px; background-color:red" >
+
+            </ng-template>
+            </a>
+        </li>
+    </ul>
+</div>

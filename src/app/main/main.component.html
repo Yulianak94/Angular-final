@@ -1,132 +1,95 @@
-
 <div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="https://cdn.pixabay.com/photo/2020/11/19/08/03/college-5757815_960_720.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Stony Brook University</h1>
+        <p class="lead">The State University of New York at Stony Brook (SUNY at Stony Brook), more commonly known as Stony Brook University (SBU), is a public research university in Stony Brook, New York. It is one of four university centers of the State University of New York system. Consisting of 213 buildings over 1,454 acres of land in Suffolk County, it is the largest public university in the state of New York by area</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Cantact Us</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Registration</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <main>
+  <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">The University  </h2>
+    
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" style="width: 1400px; height: 600px;">
+      <div class="col" style="width: 400px; height: 500px;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_960_720.jpg');">
+          <div class="d-flex flex-column h-100 p-20 pb-20 text-white text-shadow-1">
+            <h2 class="pt-10 mt-10 mb-10 display-8 lh-8 fw-bold">Our Library</h2>
+          </div>
+        </div>
+      </div>
 
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                    
-                    <svg width="1420" height="250" xmlns="http://www.w3.org/2000/svg" style="background-color:#3399ff" >
-                        <image href="https://images.unsplash.com/photo-1596653048881-dc30d5b20b00?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhhcHB5JTIwZG9nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" height="250" width="600"/>
-                        </svg>
-          
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h1 style="text-align:right">WELLCOME</h1>
-                            <p style="text-align:right">The Best Academy For Dogs</p>
-                            <p style="text-align:right"> <a class="btn btn-lg btn-primary" routerLink="/main">Sign up today</a></p>
-                        
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="carousel-item">
-                    <svg width="1420" height="250" xmlns="http://www.w3.org/2000/svg" style="background-color:#3399ff" >
-                        <image href="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2Nob29sfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" height="250" width="600"/>
-                    </svg>          
-                  <div class="container">
-                    <div class="carousel-caption">
-                      <h1 style="text-align:right">TO OUR</h1>
-                      <p style="text-align:right"> Study from the safety and comfort of your own home!</p>
-                      <p style="text-align:right"><a class="btn btn-lg btn-primary" routerLink="/main">Learn more</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                    <svg width="1420" height="250" xmlns="http://www.w3.org/2000/svg" style="background-color:#3399ff" >
-                        <image href="https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sJTIwZG9nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" height="250" width="600"/>
-                        </svg>          
-                  <div class="container">
-                    <div class="carousel-caption text-end">
-                      <h1 style="text-align:right">SCHOOL</h1>
-                      <p style="text-align:right">We have a class to suit every owner and their best friend!</p>
-                      <p style="text-align:right"><a class="btn btn-lg btn-primary" routerLink="/main">Browse gallery</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+        <div class="col" style="width: 400px; height: 500px;">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://cdn.pixabay.com/photo/2013/02/26/01/10/auditorium-86197_960_720.jpg');">
+            <div class="d-flex flex-column h-100 p-20 pb-20 text-white text-shadow-1">
+              <h2 class="pt-10 mt-10 mb-10 display-6 lh-6 fw-bold">Study Rooms </h2>
             </div>
-          
-          
-            <!-- Marketing messaging and featurettes
-            ================================================== -->
-            <!-- Wrap the rest of the page in another container to center all the content. -->
-          
-            
-          
-            <div>
-              <!-- START THE FEATURETTES -->
-          
-              <hr class="featurette-divider">
-          
-              <div class="row featurette">
-                <div class="col-md-7">
-                  <h2 class="featurette-heading">Come To our School!  <span class="text-muted"> It will blow your mind.</span></h2>
-                  <p class="lead">Enrolling in a dog training school can make your dream of working with animals a reality. Dog obedience training lets you earn a living by making a difference in both human and canine lives.  Certified dog trainers enjoy a variety of career options.  They can start their own dog training business, work for an established dog training company, or work in an animal shelter or pet store.
-                    As a dog training school, we provide you the education, practical skills and hands-on experience needed to become a dog trainer. As a student, you have the opportunity to study from home and get real work experience within your area.</p>
-                </div>
-                <div class="col-md-5">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#eee"/>
-                    <image href="https://images.pexels.com/photos/6568483/pexels-photo-6568483.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="500" width="500"/>
+          </div>
+        </div>
 
-                </svg>
-          
-                </div>
+          <div class="col" style="width: 400px; height: 500px;">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.pexels.com/photos/2861798/pexels-photo-2861798.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
+              <div class="d-flex flex-column h-100 p-20 pb-20 text-white text-shadow-1">
+                <h2 class="pt-10 mt-10 mb-10 display-5 lh-5 fw-bold">Come Visit Us </h2>
               </div>
-          
-              <hr class="featurette-divider">
-          
-              <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                  <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                  <p class="lead">The best school in the country</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#eee"/>
-                    <image href="https://images.pexels.com/photos/260440/pexels-photo-260440.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="500" width="500"/>
+            </div>
+          </div>
+  </div>
 
-                </svg>
-          
-                </div>
-              </div>
-          
-              <hr class="featurette-divider">
-          
-              <div class="row featurette">
-                <div class="col-md-7">
-                  <h2 class="featurette-heading">Puppy Class!  <span class="text-muted">Tailored especially for you</span></h2>
-                  <p class="lead">Sign up for a free trial lesson and you will be impressed</p>
-                </div>
-                <div class="col-md-5">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#eee"/>
-                    <image href="https://images.pexels.com/photos/3726314/pexels-photo-3726314.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="500" width="500"/>
 
-                </svg>
-          
-                </div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="https://cdn.pixabay.com/photo/2018/10/02/11/13/girl-3718537_960_720.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Want to change the great big world? Join our community of explorers.</h1>
+        <p class="lead">The Campaign for Stony Brook Through research and discovery, we are changing the world.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Join Us</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Take A Virtual Tour</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Our Pupils  </h2>
+    
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" style="width: 1400px; height: 600px;">
+      <div class="col" style="width: 400px; height: 500px;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://cdn.pixabay.com/photo/2017/09/08/00/38/friend-2727307_960_720.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Reach For The Stars</h2>
+          </div>
+        </div>
+      </div>
+
+        <div class="col" style="width: 400px; height: 500px;">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://cdn.pixabay.com/photo/2016/05/18/11/25/library-1400312_960_720.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Learning From Nature</h2>
+            </div>
+          </div>
+        </div>
+
+          <div class="col" style="width: 400px; height: 500px;">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://cdn.pixabay.com/photo/2020/02/06/20/01/university-library-4825366_960_720.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Dreaming Big</h2>
               </div>
-          
-              <hr class="featurette-divider">
-          
-              <!-- /END THE FEATURETTES -->
-          
-            </div><!-- /.container -->
-          
-          
-           
-          </main>
+            </div>
+          </div>
+  </div>
+
+  <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </div>

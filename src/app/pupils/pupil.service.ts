@@ -1,7 +1,7 @@
-import { Student } from './student';
+import { Pupil } from './pupil';
 import { Injectable } from '@angular/core';
 import {Observable, of,from } from 'rxjs';
-import { STUDENTS } from './dummy-data-students';
+import { PUPILS } from './dummy-data-pupils';
 import {
   map, reduce} from 'rxjs/operators';
 import { Grade } from '../Grade';
@@ -10,18 +10,18 @@ import { Grade } from '../Grade';
 @Injectable({
   providedIn: 'root'
 })
-export class StudentService {
+export class PupilService {
 
   constructor() { }
 
-  getStudents(): Observable<Student[]> {
-    return of(STUDENTS);
+  getPupils(): Observable<Pupil[]> {
+    return of(PUPILS);
   }
 
-  getStudent(id: number | string) {
-    return this.getStudents().pipe(
+  getPupil(id: number | string) {
+    return this.getPupils().pipe(
       // + - before `id` - turns a string into a number
-      map((student: Student[]) => student.find(s => s.id === +id)!)
+      map((pupil: Pupil[]) => pupil.find(s => s.id === +id)!)
     )
   }
 

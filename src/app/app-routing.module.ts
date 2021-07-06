@@ -8,8 +8,8 @@ const appRoutes: Routes = [
   { path: 'main', component: MainComponent },
   { path: '', redirectTo: '/main', pathMatch: 'full' },
   { path: 'teachers', redirectTo: '/teachers' },
-  { path: 'students', redirectTo: '/students'},
-  { path: 'workers', redirectTo: '/workers' },
+  { path: 'pupils', redirectTo: '/pupils'},
+  { path: 'employees', redirectTo: '/employees' },
   
 
 ]

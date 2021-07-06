@@ -1,0 +1,26 @@
+<div class="container">
+    <h3>Pupils List</h3>
+    <ul class="list-group">
+      
+
+
+        <li *ngFor="let pupil of pupils | async"   class="d-flex flex-column">
+            <a [routerLink]="['/pupil', pupil.id]">
+            <div *ngIf="pupil.avg>60; else elseBlock"  >
+
+                <hr style="height:20px; background-color:blue">
+                <b> {{ pupil.name }} </b> <label>Average:</label> {{ pupil.avg }}
+                <hr style="height:20px; background-color:blue">
+
+            </div>
+
+            <ng-template #elseBlock>
+                <hr style="height:20px; background-color:red">
+                <b> {{ pupil.name }} </b> <label>Average:</label> {{ pupil.avg }}
+                <hr style="height:20px; background-color:red">
+
+            </ng-template>
+            </a>
+        </li>
+    </ul>
+</div>
